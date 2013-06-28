@@ -1,0 +1,24 @@
+<internal_error>
+	<executable>quartus_sim.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_sim.exe (2135 megabytes used)</error>
+	<date>Mon Jan 28 19:47:37 2013</date>
+	<version>Version 9.1 Build 222 10/21/2009 SJ Web Edition</version>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_sim.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_sim.exe (2134 megabytes used)</error>
+	<date>Mon Jan 28 19:49:53 2013</date>
+	<version>Version 9.1 Build 222 10/21/2009 SJ Web Edition</version>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_sim.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_sim.exe (2134 megabytes used)</error>
+	<date>Mon Jan 28 19:54:38 2013</date>
+	<version>Version 9.1 Build 222 10/21/2009 SJ Web Edition</version>
+</internal_error>
+

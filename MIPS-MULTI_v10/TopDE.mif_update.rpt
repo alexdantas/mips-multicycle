@@ -1,0 +1,82 @@
+MIF/HEX Update report for TopDE
+Tue Jun 18 17:53:51 2013
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Tue Jun 18 17:53:50 2013 ;
+; Revision Name         ; TopDE                                 ;
+; Top-level Entity Name ; MIPS                                  ;
+; Family                ; Cyclone II                            ;
+; Device                ; EP2C70F896C6                          ;
++-----------------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; MIF/HEX Update Processed Files                                                                                          ;
++-------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                               ;
++-------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/lamar/Documents/Meus_Documentos/kiko/Disciplinas/UnB/OAC/2013-1/Lab4/MIPS-MULTI_v10/MIPS-MULTI_v10/default.mif ;
+; C:/Users/lamar/Documents/Meus_Documentos/kiko/Disciplinas/UnB/OAC/2013-1/Lab4/MIPS-MULTI_v10/MIPS-MULTI_v10/div_s.hex   ;
+; C:/Users/lamar/Documents/Meus_Documentos/kiko/Disciplinas/UnB/OAC/2013-1/Lab4/MIPS-MULTI_v10/MIPS-MULTI_v10/syscall.mif ;
++-------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II MIF/HEX Update
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Tue Jun 18 17:53:47 2013
+Info: Command: quartus_cdb TopDE -c TopDE --update_mif
+Warning: 8180 out of 8192 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 2 warnings found, and 2 warnings are reported.
+    Warning: Addresses ranging from 8 to 4095 are not initialized
+    Warning: Addresses ranging from 4100 to 8191 are not initialized
+Warning: 1789 out of 4096 addresses are uninitialized. The Quartus II software will initialize them to "0". There are 2 warnings found, and 2 warnings are reported.
+    Warning: Addresses ranging from 443 to 2047 are not initialized
+    Warning: Addresses ranging from 3912 to 4095 are not initialized
+Critical Warning: Memory depth (3072) in the design file differs from memory depth (4096) in the Memory Initialization File "syscall.mif" -- truncated remaining initial content value to fit RAM
+Info: Processed the following Memory Initialization File(s)
+    Info: Processed Memory Initialization File C:/Users/lamar/Documents/Meus_Documentos/kiko/Disciplinas/UnB/OAC/2013-1/Lab4/MIPS-MULTI_v10/MIPS-MULTI_v10/default.mif
+    Info: Processed Memory Initialization File C:/Users/lamar/Documents/Meus_Documentos/kiko/Disciplinas/UnB/OAC/2013-1/Lab4/MIPS-MULTI_v10/MIPS-MULTI_v10/div_s.hex
+    Info: Processed Memory Initialization File C:/Users/lamar/Documents/Meus_Documentos/kiko/Disciplinas/UnB/OAC/2013-1/Lab4/MIPS-MULTI_v10/MIPS-MULTI_v10/syscall.mif
+Info: Quartus II MIF/HEX Update was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 217 megabytes
+    Info: Processing ended: Tue Jun 18 17:53:51 2013
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
+
+

@@ -1,0 +1,26 @@
+Setups para um projeto na Placa Altera DE2-70
+
+
+1) Definir o modelo da FPGA (Se já não tiver sido definido no momento da criação do projeto)
+Menu: Assignments/Device
+Selecione Family: Cyclone II
+	  Device: EP2C70F896C6
+
+2) Incluir a nomenclatura e a posição dos pinos de I/O da FPGA
+Menu Assignments/Import Assignments
+include ... DE2_70_pin_assignments.csv
+
+3) Incluir a definição que permite a escrita na memória interna da FPGA
+Menu Assigments/Settings/Analysis & Synthesis Settings/Default Parameters
+Name: CYCLONEII_SAFE_WRITE 
+Default Setting: "VERIFIED_SAFE"  (com as aspas)
+
+4) Permitir o uso da última versão da Linguagem Verilog
+Menu Assigments/Settings/Analysis & Synthesis Settings/Verilog HDL Input
+SystemVerilog-2005
+
+
+5) Permitir que o pino AD25 (nCEO) seja usado com o dispositivo de I/O iSW[7]
+Menu Assignments/Device/Device and Pin Options/Dual-Purpose Pins
+Selecionar o valor de nCEO para"Use as regular I/O"
+

@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.376 ns
+From           : iRST
+To             : FPURegisters:FPURegBank|registers[17][17]
+From Clock     : --
+To Clock       : iCLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 23.940 ns
+From           : Control:Cont0|pr_state.FPUSWC1
+To             : owMemReadData[22]
+From Clock     : iCLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 18.579 ns
+From           : iRegDispSelect[2]
+To             : oFPRegDisp[8]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.266 ns
+From           : altera_internal_jtag~TDIUTAP
+To             : sld_hub:auto_hub|jtag_ir_reg[9]
+From Clock     : --
+To Clock       : altera_internal_jtag~TCKUTAP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'iCLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.65 MHz ( period = 130.670 ns )
+From           : Control:Cont0|pr_state.DECODE
+To             : ALU:ALU0|LO[29]
+From Clock     : iCLK
+To Clock       : iCLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'iCLK50'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 114.84 MHz ( period = 8.708 ns )
+From           : ula_fp:FPALUUnit|div_s:div1|div_s_altfp_div_vtj:div_s_altfp_div_vtj_component|div_s_altfp_div_pst_75h:altfp_div_pst1|lpm_mult:remainder_mult_0|mult_l8s:auto_generated|mac_out2~DATAOUT18
+To             : ula_fp:FPALUUnit|div_s:div1|div_s_altfp_div_vtj:div_s_altfp_div_vtj_component|div_s_altfp_div_pst_75h:altfp_div_pst1|lpm_mult:q_partial_1|mult_n8s:auto_generated|result[16]
+From Clock     : iCLK50
+To Clock       : iCLK50
+Failed Paths   : 0
+
+Type           : Clock Setup: 'altera_internal_jtag~TCKUTAP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 146.76 MHz ( period = 6.814 ns )
+From           : sld_hub:auto_hub|irf_reg[2][1]
+To             : sld_hub:auto_hub|tdo
+From Clock     : altera_internal_jtag~TCKUTAP
+To Clock       : altera_internal_jtag~TCKUTAP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'iCLKMem'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 163.03 MHz ( period = 6.134 ns )
+From           : Memory:MemRAM|MemoryBlockSys:MB1|altsyncram:altsyncram_component|altsyncram_jim1:auto_generated|altsyncram_u3i2:altsyncram1|ram_block3a14~porta_datain_reg0
+To             : Memory:MemRAM|MemoryBlockSys:MB1|altsyncram:altsyncram_component|altsyncram_jim1:auto_generated|altsyncram_u3i2:altsyncram1|ram_block3a14~porta_memory_reg0
+From Clock     : iCLKMem
+To Clock       : iCLKMem
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

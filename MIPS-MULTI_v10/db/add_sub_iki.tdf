@@ -1,0 +1,55 @@
+--lpm_add_sub CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 DEVICE_FAMILY="Cyclone II" LPM_DIRECTION="ADD" LPM_PIPELINE=1 LPM_REPRESENTATION="SIGNED" LPM_WIDTH=9 aclr clken clock dataa datab overflow result
+--VERSION_BEGIN 9.1SP2 cbx_cycloneii 2010:03:24:20:43:43:SJ cbx_lpm_add_sub 2010:03:24:20:43:43:SJ cbx_mgl 2010:03:24:21:01:05:SJ cbx_stratix 2010:03:24:20:43:43:SJ cbx_stratixii 2010:03:24:20:43:43:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2010 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+
+--synthesis_resources = lut 10 
+SUBDESIGN add_sub_iki
+( 
+	aclr	:	input;
+	clken	:	input;
+	clock	:	input;
+	dataa[8..0]	:	input;
+	datab[8..0]	:	input;
+	overflow	:	output;
+	result[8..0]	:	output;
+) 
+VARIABLE
+	pipeline_dffe[8..0]	:	DFFE
+		WITH (
+			power_up ="low"
+		);
+	overflow_dffe[8..0]	:	DFFE
+		WITH (
+			power_up ="low"
+		);
+	result_int[8..0]	:	WIRE;
+BEGIN 
+	result_int[] = dataa[] + datab[];
+	pipeline_dffe[].clk = clock;
+	pipeline_dffe[].clrn = !aclr;
+	pipeline_dffe[].ena = clken;
+	overflow_dffe[].clk = clock;
+	overflow_dffe[].clrn = !aclr;
+	overflow_dffe[].ena = clken;
+	result[] = pipeline_dffe[8..0].q;
+	pipeline_dffe[8..0].d = result_int[];
+	overflow = overflow_dffe[0..0].q;
+	overflow_dffe[0].d = ! (dataa[8] $ datab[8]) & (dataa[8] $ result_int[8]);
+END;
+--VALID FILE

@@ -1,0 +1,61 @@
+RPW
+
+	Undo Commands
+	     1.	||Compilation Report||Flow Summary
+	     2.	||Compilation Report||Timing Analyzer||Timing Analyzer Summary
+	     3.	||Compilation Report||Flow Summary
+
+
+WED
+
+	Undo Commands
+	     1.	Node or Bus Properties
+			 *** 
+	     2.	Node or Bus Properties
+			 *** 
+	     3.	Node or Bus Properties
+			 *** 
+	     4.	Arbitrary Value
+			 *** 
+	     5.	Edit Waveform
+	     6.	Clock
+	     7.	Clock
+	     8.	Clock
+	     9.	Drop Node
+			 *** 
+	    10.	Drop Node
+			 *** 
+	    11.	Node or Bus Properties
+			 *** 
+	    12.	Drop Node
+			 *** 
+	    13.	Drop Node
+			 *** 
+	    14.	Drop Node
+			 *** 
+	    15.	Drop Node
+			 *** 
+	    16.	Drop Node
+			 *** 
+	    17.	Insert Node or Bus
+
+
+RPW
+
+	Undo Commands
+	     1.	||Simulation Report||Simulator||Simulation Waveforms
+	     2.	||Simulation Report||Simulator||Simulator Settings
+	     3.	||Simulation Report||Simulator||Simulator Summary
+	     4.	||Simulation Report||Flow Settings
+	     5.	||Simulation Report||Legal Notice
+	     6.	||Simulation Report||Simulator||Simulator INI Usage
+	     7.	||Simulation Report||Simulator||Simulation Coverage||Coverage Summary
+	     8.	||Simulation Report||Simulator||Simulation Waveforms
+	     9.	||Simulation Report||Simulator||Logical Memories|||MIPS|Memory:Mem0|MemoryBlock:MB0|altsyncram:altsyncram_component|altsyncram_p0j1:auto_generated|altsyncram_pge2:altsyncram1|ALTSYNCRAM
+	    10.	||Simulation Report||Simulator||Logical Memories|||MIPS|Memory:Mem0|MemoryBlockSys:MB1|altsyncram:altsyncram_component|altsyncram_kli1:auto_generated|altsyncram_67e2:altsyncram1|ALTSYNCRAM
+	    11.	||Simulation Report||Simulator||Simulation Waveforms
+	    12.	||Simulation Report||Simulator||Simulator Summary
+	    13.	||Simulation Report||Simulator||Simulator Settings
+	    14.	||Simulation Report||Simulator||Simulation Waveforms
+
+

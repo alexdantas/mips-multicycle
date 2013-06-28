@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Jun 19 15:34:34 2013
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : TopDE
+Top-level Entity Name : MIPS
+Family : Cyclone II
+Device : EP2C70F896C6
+Timing Models : Final
+Total logic elements : 14,030 / 68,416 ( 21 % )
+    Total combinational functions : 12,237 / 68,416 ( 18 % )
+    Dedicated logic registers : 4,628 / 68,416 ( 7 % )
+Total registers : 4628
+Total pins : 375 / 622 ( 60 % )
+Total virtual pins : 0
+Total memory bits : 365,337 / 1,152,000 ( 32 % )
+Embedded Multiplier 9-bit elements : 35 / 300 ( 12 % )
+Total PLLs : 0 / 4 ( 0 % )
