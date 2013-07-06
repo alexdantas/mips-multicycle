@@ -583,6 +583,22 @@ set_location_assignment PIN_H19 -to oVGA_VS
 set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS OFF
 set_global_assignment -name SIMULATION_MODE TIMING
 set_global_assignment -name SIMULATOR_GENERATE_POWERPLAY_VCD_FILE OFF
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ULA.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BSF_FILE Registers.bsf
+set_global_assignment -name BSF_FILE ALU.bsf
+set_global_assignment -name BSF_FILE ALUcontrol.bsf
+set_global_assignment -name BSF_FILE Control.bsf
+set_global_assignment -name BSF_FILE FlagBank.bsf
+set_global_assignment -name BSF_FILE FPALUControl.bsf
+set_global_assignment -name BSF_FILE FPURegisters.bsf
+set_global_assignment -name BSF_FILE Memory.bsf
+set_global_assignment -name BSF_FILE MIPS.bsf
+set_global_assignment -name BSF_FILE Mult4to1.bsf
 set_global_assignment -name VERILOG_FILE FlagBank.v
 set_global_assignment -name VERILOG_FILE FPALUControl.v
 set_global_assignment -name VERILOG_FILE FPURegisters.v
@@ -639,9 +655,4 @@ set_global_assignment -name QIP_FILE MemoryBlockSys.qip
 set_global_assignment -name QIP_FILE MemoryBlock.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA2.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA2_result.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ULA.vwf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE "MIPS-MULTICYCLE-SCHEMATIC.bdf"
